@@ -70,7 +70,7 @@ export default function Contact({ shouldFadeOnScroll }: ContactProps) {
               </div>
 
               <p>Or</p>
-              <p className="text-md md:text-xl leading-relaxed">Contact me through <a href={psycologyTodayLink} target="_blank" rel="noopener noreferrer" className="text-themeDarkBlue hover:text-themeDarkBlue/80">Psycology Today</a></p>
+              <p className="text-md md:text-xl leading-relaxed">Contact me through <a href={psycologyTodayLink} target="_blank" rel="noopener noreferrer" className="text-themeDarkBlue/80 sm:text-themeDarkBlue hover:text-themeDarkBlue/80">Psycology Today</a></p>
             </div>
           </FadeIn>
       </div>
