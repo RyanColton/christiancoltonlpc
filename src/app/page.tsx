@@ -1,8 +1,7 @@
 import { Hero } from "@/components/Layout/Hero";
-import Services from "./services/page";
-import Approach from "./approach/page";
-import Groups from "./groups/page";
-import Contact from "./contact/page";
+import Services from "./services/Services";
+import Contact from "./contact/Contact";
+
 export default function Home() {
   return (
     <div className="h-full flex flex-col justify-center items-center" >

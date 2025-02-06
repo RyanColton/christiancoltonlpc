@@ -3,6 +3,7 @@ import Button from '../UILibrary/Button'
 import FadeIn from '../UILibrary/FadeIn'
 import UserCheck from '@/svgs/UserCheck'
 import Insurance from '@/svgs/Insurance'
+
 export function Hero() {
   return (
     <section className="relative bg-neutral-50 px-4 py-8 sm:p-20 w-full flex flex-col items-center justify-center">
@@ -15,7 +16,7 @@ export function Hero() {
           </FadeIn>
           <FadeIn delay={200}>
             <p className="mt-3 mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-neutral-500 max-w-prose">
-              It's hard work to be a person! Each of us, no matter where we are in life, have our own personal struggles and successes to tell. Be it the stress of our present moment, our anxieties about the future, or the pain of our past, I would be honored to support you. As a counselor, I strive to provide a safe, productive, and healing space to understand and accept our past, so that we can fully partake in the gifts of the present. All are celebrated here!
+              Its hard work to be a person! Each of us, no matter where we are in life, have our own personal struggles and successes to tell. Be it the stress of our present moment, our anxieties about the future, or the pain of our past, I would be honored to support you. As a counselor, I strive to provide a safe, productive, and healing space to understand and accept our past, so that we can fully partake in the gifts of the present. All are celebrated here!
             </p>
           </FadeIn>
         </div>

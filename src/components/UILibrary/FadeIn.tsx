@@ -43,7 +43,7 @@ export default function FadeIn({ children, className = '', delay = 0, shouldFade
         observer.unobserve(elementRef.current)
       }
     }
-  }, [delay, shouldFade])
+  }, [delay, shouldFade, elementRef])
 
   if (!shouldFade) {
     return children;
