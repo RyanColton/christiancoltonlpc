@@ -47,7 +47,7 @@ export default async function BlogPage({ searchParams }: Props) {
             sort: 'createdAt',
             limit: 3
         })
-        posts = docs
+        posts = docs as unknown as Post[]
     } else {
         // Original logic for listing posts
         const { docs } = await payload.find({
@@ -58,7 +58,7 @@ export default async function BlogPage({ searchParams }: Props) {
             },
             limit: 2
         })
-        posts = docs
+        posts = docs as unknown as Post[]
     }
 
     // Type assertion to match Blog component's expected type
