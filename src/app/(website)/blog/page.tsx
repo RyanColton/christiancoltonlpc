@@ -1,10 +1,22 @@
 import { getPayload } from 'payload'
 import config from '@payload-config'
+import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 import Blog from './Blog'
 
 export type SearchParams = Promise<{
     postId?: string;
   }>;
+
+export type Post = {
+    id: string;
+    title: string;
+    content: SerializedEditorState;
+    author: { name: string; email: string };
+    heroImage: { filename: string };
+    categories: { name: string }[];
+    datePublished: string;
+    createdAt: string;
+  };
 
 type Props = {
     searchParams?: SearchParams
@@ -13,7 +25,7 @@ type Props = {
 export default async function BlogPage({ searchParams }: Props) {
     const postId = (await searchParams)?.postId
     const payload = await getPayload({ config })
-    let posts: any[] = []
+    let posts: Post[] = []
     if (postId) {
         // First get the current post's createdAt to use as reference
         const currentPost = await payload.findByID({

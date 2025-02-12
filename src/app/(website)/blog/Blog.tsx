@@ -1,21 +1,9 @@
 import { RichText } from '@payloadcms/richtext-lexical/react'
-import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 import Link from 'next/link'
-import { SearchParams } from './page'
+import { SearchParams, Post } from './page'
 const blobBaseUrl = process.env.BLOB_BASE_URL
 
-type Post = {
-  id: string;
-  title: string;
-  content: SerializedEditorState;
-  author: { name: string; email: string };
-  heroImage: { filename: string };
-  categories: { name: string }[];
-  datePublished: string;
-  createdAt: string;
-};
-
-export default async function Blog({ searchParams, data }: { searchParams: SearchParams, data: { docs: { title: string, content: SerializedEditorState, author: { name: string, email: string }, heroImage: { filename: string }, categories: { name: string }[], datePublished: string, id: string, createdAt: string }[] } }) {
+export default async function Blog({ searchParams, data }: { searchParams?: SearchParams, data: { docs: Post[] } }) {
   const postId = (await searchParams)?.postId
   let currentPost: Post | null = null
   let prevPost: Post | null = null
