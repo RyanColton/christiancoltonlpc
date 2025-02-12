@@ -1,10 +1,15 @@
 import { getPayload } from 'payload'
 import config from '@payload-config'
-
 import Blog from './Blog'
 
-export default async function BlogPage({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
-    const postId = searchParams.postId as string
+type Props = {
+    searchParams?: Promise<{
+      postId?: string;
+    }>;
+  };
+
+export default async function BlogPage({ searchParams }: Props) {
+    const postId = (await searchParams)?.postId
     const payload = await getPayload({ config })
     const { docs } = await payload.find({
         collection: 'posts',

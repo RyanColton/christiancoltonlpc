@@ -1,6 +1,5 @@
 import { RichText } from '@payloadcms/richtext-lexical/react'
 import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
-import Image from 'next/image'
 const blobBaseUrl = process.env.BLOB_BASE_URL
 
 export default function Blog({ data }: { data: { docs: { title: string, content: SerializedEditorState, author: { name: string, email: string }, heroImage: { filename: string }, categories: { name: string }[], datePublished: string }[] } }) {
