@@ -19,11 +19,17 @@ export default async function Blog({ searchParams, data }: { searchParams?: Sear
     prevPost = data.docs.find(p => p.createdAt < post.createdAt) || null
     nextPost = data.docs.find(p => p.createdAt > post.createdAt) || null
   } else {
+    if (data.docs.length === 1) {
+      currentPost = data.docs[0]
+    }
     currentPost = data.docs[1] || null
     prevPost = data.docs[0] || null
   }
 
-  console.log(data.docs)
+  if (!currentPost) {
+    return <div>Post not found</div>
+  }
+
 
   return (
     <div className="w-full flex justify-center items-center bg-themeLightBlue" >
