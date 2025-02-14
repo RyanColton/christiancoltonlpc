@@ -43,7 +43,7 @@ export function Footer() {
           <div className="text-center sm:text-left col-span-1 sm:col-span-2 md:col-span-1">
             <h3 className="text-white font-medium text-lg">Contact</h3>
             <ul className="mt-4 space-y-2 text-neutral-400 text-sm sm:text-base">
-              <li>Email: your@email.com</li>
+              <li>Email: therapist@christiancoltonlpc.com</li>
               <li>Phone: (541) 230-7299</li>
               <li>Address: 132 E Broadway St<br />Eugene, OR 97401</li>
             </ul>

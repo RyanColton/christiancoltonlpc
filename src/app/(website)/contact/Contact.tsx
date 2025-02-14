@@ -47,9 +47,9 @@ export default function Contact({ shouldFadeOnScroll }: ContactProps) {
                     onClick={() => {
                       if (name && email && message) {
                         if (type === 'group') {
-                          window.location.href = `mailto:contact@example.com?subject=${subject} - ${name} - ${email}&body=${message}`;
+                          window.location.href = `mailto:therapist@christiancoltonlpc.com?subject=${subject} - ${name} - ${email}&body=${message}`;
                         } else {
-                          window.location.href = `mailto:contact@example.com?subject=${subject} - ${name} - ${email}&body=${message}`;
+                          window.location.href = `mailto:therapist@christiancoltonlpc.com?subject=${subject} - ${name} - ${email}&body=${message}`;
                         }
                         setName('');
                         setEmail('');

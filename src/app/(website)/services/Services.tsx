@@ -25,6 +25,12 @@ export default function Services({ shouldFadeOnScroll }: { shouldFadeOnScroll?: 
                 <ul className="text-left space-y-6">
                   <li className="flex items-start gap-3">
                     <span className="text-indigo-300 text-md md:text-lg">&#8226;</span>
+                    <span>
+                      <strong className="text-indigo-200">Individual Therapy:</strong> I offer individual therapy for those who are looking for a safe space to process their past, present, and future.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-indigo-300 text-md md:text-lg">&#8226;</span>
                   <span>
                     <strong className="text-indigo-200">EMDR:</strong> I am a trained EMDR Therapist from the EMDR International Association and offer EMDR as a pathway to process painful and traumatic memories.
                   </span>
@@ -39,12 +45,6 @@ export default function Services({ shouldFadeOnScroll }: { shouldFadeOnScroll?: 
                     <span className="text-indigo-300 text-md md:text-lg">&#8226;</span>
                     <span>
                       <strong className="text-indigo-200">LDS Religious Trauma Group Therapy:</strong> I offer a small processing group for religious trauma for those who used to belong to the Church of Jesus Christ of Latter-Day Saints. Contact me to be put on a waitlist for the next group.
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-indigo-300 text-md md:text-lg">&#8226;</span>
-                    <span>
-                      <strong className="text-indigo-200">Individual Therapy:</strong> I offer individual therapy for those who are looking for a safe space to process their past, present, and future.
                     </span>
                   </li>
                 </ul> 

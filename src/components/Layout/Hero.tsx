@@ -1,8 +1,5 @@
-import CreditCard from '@/svgs/CreditCard'
 import Button from '../UILibrary/Button'
 import FadeIn from '../UILibrary/FadeIn'
-import UserCheck from '@/svgs/UserCheck'
-import Insurance from '@/svgs/Insurance'
 
 const blobUrl = process.env.BLOB_BASE_URL
 

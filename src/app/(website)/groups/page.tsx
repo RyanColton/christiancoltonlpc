@@ -13,7 +13,7 @@ export default function Groups() {
         }}
         id="groups"
       >
-        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-lg shadow-xl rounded-sm text-white [&_p]:before:content-['•']  [&_p]:before:text-indigo-300 [&_p]:before:text-md [&_p]:before:mr-2">
+        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-lg shadow-xl rounded-sm text-white  [&_p]:before:text-indigo-300 [&_p]:before:text-md [&_p]:before:mr-2">
           <div>
             <FadeIn delay={200} >
               <h1 className="text-3xl md:text-5xl font-extrabold mb-12 text-center">Mormon Religious Trauma Group Therapy</h1>
@@ -42,6 +42,26 @@ export default function Groups() {
             <FadeIn delay={1200}>
               <p className="text-md md:text-xl font-light mb-6 leading-relaxed">
                 I offer a small processing group for religious trauma for those who used to belong to the Church of Jesus Christ of Latter-Day Saints. Contact me to be put on a waitlist for the next group.
+              </p>
+            </FadeIn>
+            <FadeIn delay={1200}>
+              <p className="text-md md:text-xl font-light mb-6 leading-relaxed before:content-['•']">
+                For Adults 18+
+              </p>
+            </FadeIn>
+            <FadeIn delay={1200}>
+              <p className="text-md md:text-xl font-light mb-6 leading-relaxed before:content-['•']">
+                Session Cost: $45, sliding scale available in some cases.
+              </p>
+            </FadeIn>
+            <FadeIn delay={1200}>
+              <p className="text-md md:text-xl font-light mb-6 leading-relaxed before:content-['•']">
+                Insurances Accepted: Regence Blue Cross Blue Shield, United Health Care, Moda, Providence, Pacific Source Health Plans, Pacific source OHP, Trillium, Triwest
+              </p>
+            </FadeIn>
+            <FadeIn delay={1200}>
+              <p className="text-md md:text-xl font-light mb-6 leading-relaxed before:content-['•']">
+                Location: <a href="https://www.google.com/maps/dir//132%20East%20Broadway%20Eugene,%20OR%2097401" className="text-indigo-300 hover:text-indigo-400">132 East Broadway, Eugene, OR 97401</a>
               </p>
             </FadeIn>
           </div>
