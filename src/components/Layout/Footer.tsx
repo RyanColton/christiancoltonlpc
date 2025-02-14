@@ -43,9 +43,9 @@ export function Footer() {
           <div className="text-center sm:text-left col-span-1 sm:col-span-2 md:col-span-1">
             <h3 className="text-white font-medium text-lg">Contact</h3>
             <ul className="mt-4 space-y-2 text-neutral-400 text-sm sm:text-base">
-              <li>Email: therapist@christiancoltonlpc.com</li>
-              <li>Phone: (541) 230-7299</li>
-              <li>Address: 132 E Broadway St<br />Eugene, OR 97401</li>
+              <li><Link href="/contact">Email: therapist@christiancoltonlpc.com</Link></li>
+              <li><Link href="tel:+15412307299">Phone: (541) 230-7299</Link></li>
+              <li><Link href="https://www.google.com/maps/dir//132%20East%20Broadway%20Eugene,%20OR%2097401">Address: 132 E Broadway St<br />Eugene, OR 97401</Link></li>
             </ul>
           </div>
         </div>
