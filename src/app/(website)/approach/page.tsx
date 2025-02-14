@@ -1,7 +1,7 @@
 import FadeIn from "@/components/UILibrary/FadeIn";
 import Link from "next/link";
 
-const blobUrl = process.env.BLOB_URL;
+const blobUrl = process.env.BLOB_BASE_URL;
 
 export default function Approach() {
     return (

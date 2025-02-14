@@ -7,7 +7,7 @@ export default function Groups() {
         className="w-full flex flex-col justify-center items-center md:p-20 relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.3)), url('https://images.pexels.com/photos/116720/pexels-photo-116720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+            "linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.3)), url('https://www.publicdomainpictures.net/pictures/180000/velka/waldbrucke.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

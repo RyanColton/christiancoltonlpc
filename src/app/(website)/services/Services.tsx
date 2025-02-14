@@ -1,13 +1,15 @@
 import Link from "next/link";
 import FadeIn from "@/components/UILibrary/FadeIn"
 
+const blobUrl = process.env.BLOB_BASE_URL;
+
 export default function Services({ shouldFadeOnScroll }: { shouldFadeOnScroll?: boolean }) {
   return (
     <div
       className="w-full flex flex-col justify-center items-center md:p-20 relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), url('https://www.publicdomainpictures.net/pictures/180000/velka/waldbrucke.jpg')",
+            `linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), url('${blobUrl}office-iWn3uclebN9zB9rKIOXa8f1Bbs94y7')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
