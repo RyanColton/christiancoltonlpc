@@ -4,6 +4,8 @@ import FadeIn from '../UILibrary/FadeIn'
 import UserCheck from '@/svgs/UserCheck'
 import Insurance from '@/svgs/Insurance'
 
+const blobUrl = process.env.BLOB_BASE_URL
+
 export function Hero() {
   return (
     <section className="relative bg-neutral-50 px-4 py-8 sm:p-20 w-full flex flex-col items-center justify-center">
@@ -11,13 +13,20 @@ export function Hero() {
         <div className="text-center">
           <FadeIn>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900">
-              Introducing Christian Colton, LPC
+              Christian Colton LPC
             </h1>
           </FadeIn>
           <FadeIn delay={200}>
-            <p className="mt-3 mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-neutral-500 max-w-prose">
-              Its hard work to be a person! Each of us, no matter where we are in life, have our own personal struggles and successes to tell. Be it the stress of our present moment, our anxieties about the future, or the pain of our past, I would be honored to support you. As a counselor, I strive to provide a safe, productive, and healing space to understand and accept our past, so that we can fully partake in the gifts of the present. All are celebrated here!
-            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-4">
+              <img
+                src={`${blobUrl}portrait_2-HD3lh3cskE8bHkxM3YA4EqewMgwHEP`}
+                alt="Christian Colton"
+                className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover aspect-square"
+              />
+              <p className="mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-neutral-500 max-w-prose">
+                Being human is hard! We all face struggles and successes in life. Whether it's present stress, future anxieties, or past pain, I’m here to support you. As a counselor, I provide a safe, healing space to understand and accept the past, so you can fully embrace the present. All are welcome and celebrated here!
+              </p>
+            </div>
           </FadeIn>
         </div>
       </div>

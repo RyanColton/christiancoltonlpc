@@ -13,16 +13,16 @@ export function Header() {
   return (
     <header className="bg-themeDarkBlue z-50 relative">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center min-h-[120px] sm:h-64 p-4">
+        <div className="flex sm:flex-col xl:flex-row justify-between items-center min-h-[120px] sm:h-72 p-4 gap-4">
           {/* Logo - smaller on mobile */}
-          <div className="flex flex-row md:flex-col items-center gap-4">
-            <BirdIcon className="h-18 sm:h-32" />
+          <div className="flex flex-row sm:flex-col items-center gap-4">
+            <BirdIcon className="h-16 sm:h-24" />
             <Title className="h-16 sm:h-20 min-w-[150px]" />
           </div>
           
           {/* Mobile menu button */}
           <button 
-            className="md:hidden text-white"
+            className="sm:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,13 +35,13 @@ export function Header() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-col gap-4 items-start">
+          <div className="hidden sm:flex flex-col gap-4 items-start sm:mb-4 xl:mb-0">
             <div className="flex flex-row gap-x-2 md:gap-x-4">
               {routes.map((route) => {
                 const isActive = pathname === route.route || (route.route === '/' && pathname === '/')
                 return (
                   <Link
-                    className={`text-white sm:text-md lg:text-xl relative hover:text-gray-200 transition-colors duration-200 
+                    className={`text-white sm:text-md lg:text-2xl relative hover:text-gray-200 transition-colors duration-200 
                       after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white 
                       ${isActive ? 'after:scale-x-100' : 'after:scale-x-0'} 
                       hover:after:scale-x-100 after:transition-transform after:duration-300`}

@@ -10,7 +10,7 @@ export const routes: Route[] = [
         route: '/',
     },
     {
-        title: 'About My Approach',
+        title: 'My Approach',
         route: '/approach',
     },
     {
@@ -29,8 +29,9 @@ export const routes: Route[] = [
         title: 'Contact',
         route: '/contact',
     },
-    // {
-    //     title: 'Blog',
-    // },
+    {
+        title: 'Blog',
+        route: '/blog',
+    },
 
 ];
