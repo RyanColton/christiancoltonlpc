@@ -1,13 +1,15 @@
 import FadeIn from "@/components/UILibrary/FadeIn";
 import Link from "next/link";
 
+const blobUrl = process.env.BLOB_URL;
+
 export default function Approach() {
     return (
       <div
         className="w-full flex flex-col justify-center items-center md:p-20 relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.5)), url('https://images.pexels.com/photos/2172499/pexels-photo-2172499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+            `linear-gradient(rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.5)), url('${blobUrl}frames-hf7ahoeFeip8V090wIN6LtbfNgKPuQ')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

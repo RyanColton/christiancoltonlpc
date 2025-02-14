@@ -24,7 +24,7 @@ export function Hero() {
                 className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover aspect-square"
               />
               <p className="mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-neutral-500 max-w-prose">
-                Being human is hard! We all face struggles and successes in life. Whether it's present stress, future anxieties, or past pain, I’m here to support you. As a counselor, I provide a safe, healing space to understand and accept the past, so you can fully embrace the present. All are welcome and celebrated here!
+                Being human is hard! We all face struggles and successes in life. Whether it&apos;s present stress, future anxieties, or past pain, I’m here to support you. As a counselor, I provide a safe, healing space to understand and accept the past, so you can fully embrace the present. All are welcome and celebrated here!
               </p>
             </div>
           </FadeIn>
