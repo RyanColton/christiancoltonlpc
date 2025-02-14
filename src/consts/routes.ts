@@ -14,16 +14,16 @@ export const routes: Route[] = [
         route: '/approach',
     },
     {
-        title: 'Group Therapy',
-        route: '/groups',
-    },
-    {
         title: 'Services',
         route: '/services',
     },
     {
         title: 'Client Portal',
         route: 'https://chrisitancoltonlpc.sessionshealth.com/',
+    },
+    {
+        title: 'Group Therapy',
+        route: '/groups',
     },
     {
         title: 'Contact',

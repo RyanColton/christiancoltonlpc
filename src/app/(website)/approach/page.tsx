@@ -15,14 +15,14 @@ export default function Approach() {
         }}
         id="approach"
       >
-        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-lg shadow-xl rounded-sm text-white [&_p]:before:content-['•']  [&_p]:before:text-indigo-300 [&_p]:before:text-md [&_p]:before:mr-2">
+        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-lg shadow-xl rounded-sm text-white">
             <FadeIn delay={200} >
               <h1 className="text-3xl md:text-5xl font-extrabold mb-12 text-center">My Approach</h1>
             </FadeIn>
             <FadeIn delay={400}>
               <div className="text-md md:text-xl font-light mb-6 leading-relaxed text-center bg-black/30 rounded-sm p-4">
-                <h2 className="mb-2 text-xl md:text-2xl font-medium">“We cannot change, we cannot move away from what we are, until we thoroughly accept what we are. Then change seems to come about almost unnoticed.”</h2>
-                <h3 className="text-md md:text-xl font-light italic">― Carl R. Rogers</h3>
+                <h2 className="mb-2 text-xl md:text-2xl font-medium">“Every spirit builds itself a house; and beyond its house, a world; and beyond its world a heaven. Know then, that the world exists for you: build, therefore, your own world.”</h2>
+                <h3 className="text-md md:text-xl font-light italic">― Ralph Waldo Emerson</h3>
               </div>
             </FadeIn>
             <FadeIn delay={600}>
