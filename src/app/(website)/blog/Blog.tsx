@@ -21,9 +21,10 @@ export default async function Blog({ searchParams, data }: { searchParams?: Sear
   } else {
     if (data.docs.length === 1) {
       currentPost = data.docs[0]
+    } else {
+      currentPost = data.docs[1] || null
+      prevPost = data.docs[0] || null
     }
-    currentPost = data.docs[1] || null
-    prevPost = data.docs[0] || null
   }
 
   if (!currentPost) {

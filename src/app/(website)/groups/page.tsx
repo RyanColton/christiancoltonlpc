@@ -1,5 +1,6 @@
 import FadeIn from "@/components/UILibrary/FadeIn";
 import Link from "next/link";
+const blobBaseUrl = process.env.BLOB_BASE_URL
 
 export default function Groups() {
     return (
@@ -7,13 +8,13 @@ export default function Groups() {
         className="w-full flex flex-col justify-center items-center md:p-20 relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.3)), url('https://www.publicdomainpictures.net/pictures/180000/velka/waldbrucke.jpg')",
+            `linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.3)), url('${blobBaseUrl}CTR-Lgy1MtmB7CztgkrkDviyQpuVqHVI76')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
         id="groups"
       >
-        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-lg shadow-xl rounded-sm text-white  [&_p]:before:text-indigo-300 [&_p]:before:text-md [&_p]:before:mr-2">
+        <div className="flex flex-col justify-center items-center max-w-full md:max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12 bg-themeGreen/30 backdrop-blur-sm shadow-xl rounded-sm text-white  [&_p]:before:text-indigo-300 [&_p]:before:text-md [&_p]:before:mr-2">
           <div>
             <FadeIn delay={200} >
               <h1 className="text-3xl md:text-5xl font-extrabold mb-12 text-center">Mormon Religious Trauma Group Therapy</h1>
@@ -56,7 +57,7 @@ export default function Groups() {
             </FadeIn>
             <FadeIn delay={1200}>
               <p className="text-md md:text-xl font-light mb-6 leading-relaxed before:content-['•']">
-                Insurances Accepted: Regence Blue Cross Blue Shield, United Health Care, Moda, Providence, Pacific Source Health Plans, Pacific source OHP, Trillium, Triwest
+                Insurances Accepted: Moda, Providence, Pacific Source Health Plans, Pacific source OHP, Regence Blue Cross Blue Shield, United Health Care, Trillium, Triwest
               </p>
             </FadeIn>
             <FadeIn delay={1200}>
