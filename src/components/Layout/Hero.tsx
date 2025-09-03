@@ -1,8 +1,6 @@
 import Button from '../UILibrary/Button'
 import FadeIn from '../UILibrary/FadeIn'
 
-const blobUrl = process.env.BLOB_BASE_URL
-
 export function Hero() {
   return (
     <section className="relative bg-neutral-50 px-4 py-8 sm:p-20 w-full flex flex-col items-center justify-center">
