@@ -11,7 +11,7 @@ export function Hero() {
           <FadeIn delay={200}>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-4">
               <img
-                src={`${blobUrl}portrait_2-HD3lh3cskE8bHkxM3YA4EqewMgwHEP`}
+                src="static/christian_47.jpg"
                 alt="Christian Colton"
                 className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover aspect-square"
               />
